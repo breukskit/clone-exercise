@@ -193,7 +193,9 @@
 }
 #hamburger-menu-nav {
   width: 100%;
+  position: absolute;
   background-color: #f1eeeb;
+  z-index: 10;
 }
 #hamburger-menu-nav .hamburger-menu-nav-item {
   padding: 1rem;
@@ -219,6 +221,116 @@
   animation-name: hide-hamburger-menu;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+}
+
+.hero-1 {
+  width: 100%;
+  height: 80vh;
+  background-color: #f7f7f7;
+}
+@media (max-width: 1024px) {
+  .hero-1 {
+    height: auto;
+  }
+}
+.hero-1-wrapper {
+  width: 100%;
+  height: 80%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .hero-1-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.hero-1-left-content {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .hero-1-left-content {
+    order: 2;
+  }
+}
+.hero-1-right-content {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .hero-1-right-content {
+    order: 1;
+  }
+}
+.hero-1-video {
+  width: 100%;
+}
+.hero-1-heading {
+  font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  .hero-1-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .hero-1-heading {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+}
+.hero-1-paragraph {
+  line-height: 2;
+}
+@media (max-width: 1024px) {
+  .hero-1-paragraph {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .hero-1-paragraph {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+}
+.hero-1-button {
+  display: inline-block;
+  width: fit-content;
+  background-color: #00a79a;
+  padding: 1rem;
+  color: white;
+}
+.hero-1-button:hover {
+  background-color: #00b6a8;
+}
+@media (max-width: 1024px) {
+  .hero-1-button {
+    margin: auto;
+  }
+}
+@media (max-width: 280px) {
+  .hero-1-button {
+    padding: 0.5rem;
+    margin: auto;
+  }
+}
+
+.index-main {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

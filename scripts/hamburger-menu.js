@@ -12,7 +12,6 @@ function toggleHamburgerMenu() {
     hamburgerMenuNav.className = "hamburger-menu-shown";
     hamburgerMenuTrigger.className = "fas fa-times fa-lg";
   }
-  console.log(hamburgerMenuNav);
 }
 
 hamburgerMenuTrigger.addEventListener("click", toggleHamburgerMenu);
