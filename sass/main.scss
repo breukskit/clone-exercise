@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "colors";
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($colors, text);
+}
+
+ul {
+  list-style: none;
+}

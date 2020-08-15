@@ -1,0 +1,121 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+}
+.header .logo-wrapper {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .logo-wrapper .nav-logo {
+  width: 64px;
+}
+.header .nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .navbar {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.header .nav .navbar .nav-item {
+  white-space: nowrap;
+}
+.header .nav .navbar .nav-item .nav-link {
+  transition: all 200ms linear;
+}
+.header .nav .navbar .nav-item .nav-link:hover {
+  color: #00a79a;
+}
+.header .nav .navbar .nav-sub-menu {
+  display: none;
+  position: absolute;
+  color: #262626;
+  background-color: #f1eeeb;
+}
+.header .nav .navbar .nav-sub-menu-item {
+  padding: 1rem 1.5rem;
+}
+.header .nav .navbar .nav-sub-menu-link {
+  transition: all 200ms linear;
+}
+.header .nav .navbar .nav-sub-menu-link:hover {
+  color: #00a79a;
+}
+.header .sidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .sidenav .sidenav-item {
+  padding-right: 0.5rem;
+  white-space: nowrap;
+  transition: all 200ms linear;
+}
+.header .sidenav .sidenav-icon {
+  transition: all 200ms linear;
+}
+.header .sidenav .sidenav-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.header .sidenav .sidenav-sub-menu {
+  display: none;
+  position: absolute;
+  color: #262626;
+  background-color: #f1eeeb;
+}
+.header .sidenav .sidenav-sub-menu-item {
+  padding: 1rem 1.5rem;
+}
+.header .sidenav .sidenav-sub-menu-link {
+  transition: all 200ms linear;
+}
+.header .sidenav .sidenav-sub-menu-link:hover {
+  color: #00a79a;
+}
+
+.dropdown-arrow {
+  width: 10px;
+}
+
+.submenu-trigger {
+  position: relative;
+}
+.submenu-trigger:hover {
+  cursor: pointer;
+  color: #00a79a;
+}
+.submenu-trigger:hover #nav-sub-menu {
+  display: block;
+}
+
+.submenu-link {
+  padding-right: 0.5rem;
+}
+
+.sidenav-submenu-trigger {
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+.sidenav-submenu-trigger:hover {
+  cursor: pointer;
+}
+.sidenav-submenu-trigger:hover .sidenav-item {
+  color: #00a79a;
+}
+.sidenav-submenu-trigger:hover #sidenav-sub-menu {
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */
