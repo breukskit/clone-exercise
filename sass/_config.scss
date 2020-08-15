@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+body {
+  font-family: "Jost", sans-serif;
+  // font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($colors, text);
+}
+
+ul {
+  list-style: none;
+}

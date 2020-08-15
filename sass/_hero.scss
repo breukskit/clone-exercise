@@ -46,6 +46,7 @@
   }
   .hero-heading {
     font-size: 2rem;
+    font-weight: 500;
     @media (max-width: map-get($breakpoints, large )) {
       text-align: center;
       padding-bottom: 1rem;
@@ -58,6 +59,8 @@
   }
   .hero-paragraph {
     line-height: 2;
+    font-size: 1.05rem;
+    font-weight: 400;
     @media (max-width: map-get($breakpoints, large )) {
       text-align: center;
       padding-bottom: 1rem;
@@ -73,6 +76,7 @@
     width: fit-content;
     background-color: map-get($colors, primary);
     padding: 1rem;
+    font-weight: 500;
     color: map-get($colors, secondary);
     &:hover {
       background-color: lighten(map-get($colors, primary), 3%);
