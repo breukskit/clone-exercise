@@ -1,2 +1,27 @@
+@import "hero";
+
 .hero-2 {
+  @extend .hero;
+  background-color: map-get($colors, secondary);
+  .hero-2-wrapper {
+    @extend .hero-wrapper;
+    .hero-2-left-content {
+      @extend .hero-video-content;
+    }
+    .hero-2-right-content {
+      @extend .hero-text-content;
+    }
+  }
+  .hero-2-video {
+    @extend .hero-video;
+  }
+  .hero-2-heading {
+    @extend .hero-heading;
+  }
+  .hero-2-paragraph {
+    @extend .hero-paragraph;
+  }
+  .hero-2-button {
+    @extend .hero-button;
+  }
 }

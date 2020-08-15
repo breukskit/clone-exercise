@@ -1,0 +1,88 @@
+@import "colors";
+@import "breakpoints";
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  @media (max-width: map-get($breakpoints, large )) {
+    height: auto;
+  }
+  background-color: map-get($colors, grey);
+  .hero-wrapper {
+    width: 100%;
+    height: 80%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    @media (max-width: map-get($breakpoints, large )) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .hero-text-content {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    @media (max-width: map-get($breakpoints, large )) {
+      order: 2;
+    }
+  }
+  .hero-video-content {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    @media (max-width: map-get($breakpoints, large )) {
+      order: 1;
+    }
+  }
+  .hero-video {
+    width: 100%;
+  }
+  .hero-heading {
+    font-size: 2rem;
+    @media (max-width: map-get($breakpoints, large )) {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    @media (max-width: map-get($breakpoints, xs )) {
+      text-align: center;
+      padding-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+  .hero-paragraph {
+    line-height: 2;
+    @media (max-width: map-get($breakpoints, large )) {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+    @media (max-width: map-get($breakpoints, xs )) {
+      text-align: center;
+      padding-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+  }
+  .hero-button {
+    display: inline-block;
+    width: fit-content;
+    background-color: map-get($colors, primary);
+    padding: 1rem;
+    color: map-get($colors, secondary);
+    &:hover {
+      background-color: lighten(map-get($colors, primary), 3%);
+    }
+    @media (max-width: map-get($breakpoints, large )) {
+      margin: auto;
+    }
+    @media (max-width: map-get($breakpoints, xs )) {
+      padding: 0.5rem;
+      margin: auto;
+    }
+  }
+}

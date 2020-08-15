@@ -1,88 +1,114 @@
-@import "colors";
-@import "breakpoints";
+// @import "colors";
+// @import "breakpoints";
+@import "hero";
 
 .hero-1 {
-  width: 100%;
-  height: 80vh;
-  @media (max-width: map-get($breakpoints, large )) {
-    height: auto;
-  }
-  background-color: map-get($colors, grey);
-  &-wrapper {
-    width: 100%;
-    height: 80%;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    @media (max-width: map-get($breakpoints, large )) {
-      grid-template-columns: repeat(1, 1fr);
+  @extend .hero;
+  .hero-1-wrapper {
+    @extend .hero-wrapper;
+    .hero-1-left-content {
+      @extend .hero-text-content;
+    }
+    .hero-1-right-content {
+      @extend .hero-video-content;
     }
   }
-  &-left-content {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    @media (max-width: map-get($breakpoints, large )) {
-      order: 2;
-    }
+  .hero-1-video {
+    @extend .hero-video;
   }
-  &-right-content {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    @media (max-width: map-get($breakpoints, large )) {
-      order: 1;
-    }
+  .hero-1-heading {
+    @extend .hero-heading;
   }
-  &-video {
-    width: 100%;
+  .hero-1-paragraph {
+    @extend .hero-paragraph;
   }
-  &-heading {
-    font-size: 2rem;
-    @media (max-width: map-get($breakpoints, large )) {
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-    @media (max-width: map-get($breakpoints, xs )) {
-      text-align: center;
-      padding-bottom: 0.5rem;
-      font-size: 1.4rem;
-    }
-  }
-  &-paragraph {
-    line-height: 2;
-    @media (max-width: map-get($breakpoints, large )) {
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-    @media (max-width: map-get($breakpoints, xs )) {
-      text-align: center;
-      padding-bottom: 0.5rem;
-      line-height: 1.5;
-    }
-  }
-  &-button {
-    display: inline-block;
-    width: fit-content;
-    background-color: map-get($colors, primary);
-    padding: 1rem;
-    color: map-get($colors, secondary);
-    &:hover {
-      background-color: lighten(map-get($colors, primary), 3%);
-    }
-    @media (max-width: map-get($breakpoints, large )) {
-      margin: auto;
-    }
-    @media (max-width: map-get($breakpoints, xs )) {
-      padding: 0.5rem;
-      margin: auto;
-    }
+  .hero-1-button {
+    @extend .hero-button;
   }
 }
+
+// .hero-1 {
+//   width: 100%;
+//   height: 80vh;
+//   @media (max-width: map-get($breakpoints, large )) {
+//     height: auto;
+//   }
+//   background-color: map-get($colors, grey);
+//   &-wrapper {
+//     width: 100%;
+//     height: 80%;
+//     padding: 2rem;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 1.5rem;
+//     @media (max-width: map-get($breakpoints, large )) {
+//       grid-template-columns: repeat(1, 1fr);
+//     }
+//   }
+//   &-left-content {
+//     width: 80%;
+//     height: 80%;
+//     margin: auto;
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: space-around;
+//     @media (max-width: map-get($breakpoints, large )) {
+//       order: 2;
+//     }
+//   }
+//   &-right-content {
+//     width: 80%;
+//     height: 80%;
+//     margin: auto;
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: space-around;
+//     @media (max-width: map-get($breakpoints, large )) {
+//       order: 1;
+//     }
+//   }
+//   &-video {
+//     width: 100%;
+//   }
+//   &-heading {
+//     font-size: 2rem;
+//     @media (max-width: map-get($breakpoints, large )) {
+//       text-align: center;
+//       padding-bottom: 1rem;
+//     }
+//     @media (max-width: map-get($breakpoints, xs )) {
+//       text-align: center;
+//       padding-bottom: 0.5rem;
+//       font-size: 1.4rem;
+//     }
+//   }
+//   &-paragraph {
+//     line-height: 2;
+//     @media (max-width: map-get($breakpoints, large )) {
+//       text-align: center;
+//       padding-bottom: 1rem;
+//     }
+//     @media (max-width: map-get($breakpoints, xs )) {
+//       text-align: center;
+//       padding-bottom: 0.5rem;
+//       line-height: 1.5;
+//     }
+//   }
+//   &-button {
+//     display: inline-block;
+//     width: fit-content;
+//     background-color: map-get($colors, primary);
+//     padding: 1rem;
+//     color: map-get($colors, secondary);
+//     &:hover {
+//       background-color: lighten(map-get($colors, primary), 3%);
+//     }
+//     @media (max-width: map-get($breakpoints, large )) {
+//       margin: auto;
+//     }
+//     @media (max-width: map-get($breakpoints, xs )) {
+//       padding: 0.5rem;
+//       margin: auto;
+//     }
+//   }
+// }
