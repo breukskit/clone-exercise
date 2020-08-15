@@ -1,9 +1,14 @@
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 100px;
   display: grid;
   grid-template-columns: 10% 70% 20%;
+}
+@media (max-width: 1024px) {
+  .header {
+    display: none;
+  }
 }
 .header .logo-wrapper {
   width: 100%;
@@ -116,6 +121,104 @@
 }
 .sidenav-submenu-trigger:hover #sidenav-sub-menu {
   display: block;
+}
+
+.header-non-desktop {
+  width: 100%;
+  height: 100px;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: #f1eeeb;
+}
+@media (min-width: 1024px) {
+  .header-non-desktop {
+    display: none;
+  }
+}
+@media (max-width: 280px) {
+  .header-non-desktop {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+}
+.header-non-desktop-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-non-desktop-hamburger-menu {
+  transition: all 200ms ease-in-out;
+}
+.header-non-desktop-hamburger-menu:hover {
+  cursor: pointer;
+  color: #00a79a;
+}
+.header-non-desktop-heading {
+  color: #262626;
+  font-size: 1.3rem;
+}
+@media (max-width: 767px) {
+  .header-non-desktop-heading {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .header-non-desktop-heading {
+    display: none;
+  }
+}
+.header-non-desktop-sidenav-icon {
+  transition: all 200ms ease-in-out;
+}
+.header-non-desktop-sidenav-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@keyframes show-hamburger-menu {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes hide-hamburger-menu {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+#hamburger-menu-nav {
+  width: 100%;
+  background-color: #f1eeeb;
+}
+#hamburger-menu-nav .hamburger-menu-nav-item {
+  padding: 1rem;
+}
+#hamburger-menu-nav .hamburger-menu-nav-link {
+  transition: all 200ms ease-in-out;
+}
+#hamburger-menu-nav .hamburger-menu-nav-link:hover {
+  color: #00a79a;
+}
+
+.hamburger-menu-default {
+  transform: translateX(-200%);
+}
+
+.hamburger-menu-shown {
+  animation-name: show-hamburger-menu;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.hamburger-menu-hidden {
+  animation-name: hide-hamburger-menu;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=index.css.map */

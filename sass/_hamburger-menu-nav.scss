@@ -1,0 +1,32 @@
+@import "colors";
+@import "keyframes";
+
+#hamburger-menu-nav {
+  width: 100%;
+  background-color: map-get($colors, alternate-secondary);
+  .hamburger-menu-nav-item {
+    padding: 1rem;
+  }
+  .hamburger-menu-nav-link {
+    transition: all 200ms ease-in-out;
+    &:hover {
+      color: map-get($colors, primary);
+    }
+  }
+}
+
+.hamburger-menu-default {
+  transform: translateX(-200%);
+}
+
+.hamburger-menu-shown {
+  animation-name: show-hamburger-menu;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.hamburger-menu-hidden {
+  animation-name: hide-hamburger-menu;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}

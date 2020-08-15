@@ -1,0 +1,46 @@
+@import "breakpoints";
+@import "colors";
+
+.header-non-desktop {
+  width: 100%;
+  height: 100px;
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: map-get($colors, alternate-secondary);
+  @media (min-width: map-get($breakpoints, large )) {
+    display: none;
+  }
+  @media (max-width: map-get($breakpoints, xs )) {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-hamburger-menu {
+    transition: all 200ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      color: map-get($colors, primary);
+    }
+  }
+  &-heading {
+    color: map-get($colors, text);
+    font-size: 1.3rem;
+    @media (max-width: map-get($breakpoints , medium)) {
+      font-size: 1rem;
+    }
+    @media (max-width: map-get($breakpoints, xs)) {
+      display: none;
+    }
+  }
+  &-sidenav-icon {
+    transition: all 200ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

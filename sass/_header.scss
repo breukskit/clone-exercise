@@ -1,7 +1,11 @@
 @import "colors";
+@import "breakpoints";
 
 .header {
-  position: fixed;
+  @media (max-width: map-get($breakpoints , large )) {
+    display: none;
+  }
+  position: relative;
   width: 100%;
   height: 100px;
   display: grid;
