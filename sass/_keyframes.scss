@@ -1,3 +1,5 @@
+// Hamburger-menu animations
+
 @keyframes show-hamburger-menu {
   from {
     transform: translateX(-200%);
@@ -13,5 +15,51 @@
   }
   to {
     transform: translateX(-200%);
+  }
+}
+
+// Reference-carousel animations
+
+@keyframes centered-from-right {
+  from {
+    transform: translateX(1000%);
+    position: absolute;
+  }
+  to {
+    position: static;
+    transform: translateX(0);
+  }
+}
+
+@keyframes centered-from-left {
+  from {
+    transform: translateX(-150%);
+    position: absolute;
+  }
+  to {
+    transform: translateX(0);
+    position: static;
+  }
+}
+
+@keyframes swiped-left {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(-1000%);
+  }
+}
+
+@keyframes swiped-right {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(1000%);
   }
 }

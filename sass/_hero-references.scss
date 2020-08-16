@@ -1,15 +1,32 @@
 @import "reference";
 @import "navigation-dots";
+@import "keyframes";
+@import "breakpoints";
 
 .hero-references {
+  position: relative;
   width: 100%;
   background-color: rgb(241, 241, 241);
+  height: auto;
   .hero-references-wrapper {
     position: relative;
     width: 100%;
     padding: 3rem 1rem 1rem 1rem;
     .hero-references-reference-left {
       position: absolute;
+      @extend .reference;
+      &-paragraph {
+        @extend .reference-paragraph;
+      }
+      &-image {
+        @extend .reference-image;
+      }
+      &-card {
+        @extend .reference-card;
+        .left-card-text-content {
+          @extend .reference-card-text-content;
+        }
+      }
       transform: translateX(-150%);
     }
     .hero-references-reference-middle {
@@ -22,29 +39,91 @@
       }
       &-card {
         @extend .reference-card;
-        .card-text-content {
+        .middle-card-text-content {
           @extend .reference-card-text-content;
         }
       }
     }
     .hero-references-reference-right {
       position: absolute;
+      @extend .reference;
+      &-paragraph {
+        @extend .reference-paragraph;
+      }
+      &-image {
+        @extend .reference-image;
+      }
+      &-card {
+        @extend .reference-card;
+        .right-card-text-content {
+          @extend .reference-card-text-content;
+        }
+      }
       transform: translateX(1000%);
     }
   }
 }
 
 .references-navigation {
+  padding-bottom: 1rem;
   @extend .references-navigation-placeholder;
   .dot {
     @extend .dot-placeholder;
   }
 }
 
-.active-dot {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+.references-links {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  .references-links-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    .reference-link {
+      padding: 0.5rem;
+      .reference-link-image {
+        max-width: 150px;
+      }
+    }
+  }
 }
 
-.references-links {
-  display: none;
+.reference-link-2,
+.reference-link-4 {
+  @media (max-width: map-get($breakpoints, medium)) {
+    display: none;
+  }
+}
+
+.swiped-right {
+  animation-name: swiped-right;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.swiped-left {
+  animation-name: swiped-left;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.centered-from-right {
+  animation-name: centered-from-right;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.centered-from-left {
+  animation-name: centered-from-left;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.active-dot {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }

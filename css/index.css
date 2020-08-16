@@ -217,6 +217,46 @@ ul {
     transform: translateX(-200%);
   }
 }
+@keyframes centered-from-right {
+  from {
+    transform: translateX(1000%);
+    position: absolute;
+  }
+  to {
+    position: static;
+    transform: translateX(0);
+  }
+}
+@keyframes centered-from-left {
+  from {
+    transform: translateX(-150%);
+    position: absolute;
+  }
+  to {
+    transform: translateX(0);
+    position: static;
+  }
+}
+@keyframes swiped-left {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(-1000%);
+  }
+}
+@keyframes swiped-right {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(1000%);
+  }
+}
 #hamburger-menu-nav {
   width: 100%;
   position: absolute;
@@ -472,27 +512,27 @@ ul {
 .hero-2 {
   background-color: white;
 }
-.reference, .hero-references .hero-references-wrapper .hero-references-reference-middle {
+.reference, .hero-references .hero-references-wrapper .hero-references-reference-right, .hero-references .hero-references-wrapper .hero-references-reference-middle, .hero-references .hero-references-wrapper .hero-references-reference-left {
   margin: auto;
   width: 70%;
 }
-.reference .reference-paragraph, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-paragraph {
+.reference .reference-paragraph, .reference .hero-references .hero-references-wrapper .hero-references-reference-right-paragraph, .hero-references .hero-references-wrapper .reference .hero-references-reference-right-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-right .reference-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-right-paragraph, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-right-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-paragraph, .reference .hero-references .hero-references-wrapper .hero-references-reference-left-paragraph, .hero-references .hero-references-wrapper .reference .hero-references-reference-left-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-left-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-left-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-left .reference-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-right-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-left-paragraph {
   font-style: italic;
   line-height: 2;
   text-align: center;
   margin-bottom: 1.5rem;
 }
-.reference .reference-image, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-image {
+.reference .reference-image, .reference .hero-references .hero-references-wrapper .hero-references-reference-right-image, .hero-references .hero-references-wrapper .reference .hero-references-reference-right-image, .hero-references .hero-references-wrapper .hero-references-reference-right .reference-image, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-right-image, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-right-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-image, .reference .hero-references .hero-references-wrapper .hero-references-reference-left-image, .hero-references .hero-references-wrapper .reference .hero-references-reference-left-image, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-left-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-left-image, .hero-references .hero-references-wrapper .hero-references-reference-left .reference-image, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-right-image, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-left-image {
   width: 64px;
   border-radius: 64px;
 }
-.reference .reference-card, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card {
+.reference .reference-card, .reference .hero-references .hero-references-wrapper .hero-references-reference-right-card, .hero-references .hero-references-wrapper .reference .hero-references-reference-right-card, .hero-references .hero-references-wrapper .hero-references-reference-right .reference-card, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-right-card, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-right-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card, .reference .hero-references .hero-references-wrapper .hero-references-reference-left-card, .hero-references .hero-references-wrapper .reference .hero-references-reference-left-card, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-left-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-left-card, .hero-references .hero-references-wrapper .hero-references-reference-left .reference-card, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-right-card, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-left-card {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
 }
-.reference .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference .reference-card .card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-middle .reference-card .card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .card-text-content {
+.reference .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .reference .reference-card .right-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-right-card .reference-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-right-card .right-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-right-card .reference-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-right-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-right .reference-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-right-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-right-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference .reference-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference .hero-references-reference-right-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-right .reference-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-right .hero-references-reference-right-card .middle-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .middle-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .reference .hero-references-reference-middle-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-right .hero-references-reference-middle-card .right-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-middle-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-middle .reference-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-right-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-right-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-middle .reference-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-middle .hero-references-reference-right-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-middle .hero-references-reference-middle-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .reference .reference-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .reference .hero-references-reference-right-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-right .reference-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-right .hero-references-reference-right-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .reference .hero-references-reference-middle-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-right .hero-references-reference-middle-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-middle .reference-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-middle .hero-references-reference-right-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-middle .hero-references-reference-middle-card .left-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-left-card .reference-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-left-card .left-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-left-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .reference .hero-references-reference-left-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-left-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-right .hero-references-reference-left-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference .hero-references-reference-left-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-right .hero-references-reference-left-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-left-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-middle .hero-references-reference-left-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-middle .hero-references-reference-left-card .middle-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-left-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right .hero-references-reference-left-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-left-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-left .reference-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-right-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-right-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-left .reference-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-left .hero-references-reference-right-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-left .hero-references-reference-middle-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-middle-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-left .reference-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-left .hero-references-reference-right-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left-card .hero-references-reference-left .hero-references-reference-middle-card .left-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-left-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-right-card .hero-references-reference-left .hero-references-reference-left-card .right-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-left .hero-references-reference-left-card .middle-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-left .hero-references-reference-left-card .left-card-text-content {
   padding: 0.5rem;
 }
 
@@ -514,9 +554,67 @@ ul {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@keyframes show-hamburger-menu {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes hide-hamburger-menu {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+@keyframes centered-from-right {
+  from {
+    transform: translateX(1000%);
+    position: absolute;
+  }
+  to {
+    position: static;
+    transform: translateX(0);
+  }
+}
+@keyframes centered-from-left {
+  from {
+    transform: translateX(-150%);
+    position: absolute;
+  }
+  to {
+    transform: translateX(0);
+    position: static;
+  }
+}
+@keyframes swiped-left {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(-1000%);
+  }
+}
+@keyframes swiped-right {
+  from {
+    transform: translateX(0);
+    position: static;
+  }
+  to {
+    position: absolute;
+    transform: translateX(1000%);
+  }
+}
 .hero-references {
+  position: relative;
   width: 100%;
   background-color: #f1f1f1;
+  height: auto;
 }
 .hero-references .hero-references-wrapper {
   position: relative;
@@ -531,13 +629,63 @@ ul {
   position: absolute;
   transform: translateX(1000%);
 }
+.references-navigation {
+  padding-bottom: 1rem;
+}
+.references-links {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+.references-links .references-links-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.references-links .references-links-wrapper .reference-link {
+  padding: 0.5rem;
+}
+.references-links .references-links-wrapper .reference-link .reference-link-image {
+  max-width: 150px;
+}
+
+@media (max-width: 767px) {
+  .reference-link-2,
+.reference-link-4 {
+    display: none;
+  }
+}
+
+.swiped-right {
+  animation-name: swiped-right;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.swiped-left {
+  animation-name: swiped-left;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.centered-from-right {
+  animation-name: centered-from-right;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.centered-from-left {
+  animation-name: centered-from-left;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
 
 .active-dot {
   background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.references-links {
-  display: none;
 }
 
 .index-main {
