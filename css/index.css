@@ -203,7 +203,7 @@ ul {
 
 @keyframes show-hamburger-menu {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
   to {
     transform: translateX(0);
@@ -214,47 +214,39 @@ ul {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
 }
 @keyframes centered-from-right {
   from {
-    transform: translateX(1000%);
-    position: absolute;
+    transform: translateX(500%);
   }
   to {
-    position: static;
     transform: translateX(0);
   }
 }
 @keyframes centered-from-left {
   from {
-    transform: translateX(-150%);
-    position: absolute;
+    transform: translateX(-500%);
   }
   to {
     transform: translateX(0);
-    position: static;
   }
 }
 @keyframes swiped-left {
   from {
     transform: translateX(0);
-    position: static;
   }
   to {
-    position: absolute;
-    transform: translateX(-1000%);
+    transform: translateX(-500%);
   }
 }
 @keyframes swiped-right {
   from {
     transform: translateX(0);
-    position: static;
   }
   to {
-    position: absolute;
-    transform: translateX(1000%);
+    transform: translateX(500%);
   }
 }
 #hamburger-menu-nav {
@@ -556,7 +548,7 @@ ul {
 
 @keyframes show-hamburger-menu {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
   to {
     transform: translateX(0);
@@ -567,47 +559,39 @@ ul {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
 }
 @keyframes centered-from-right {
   from {
-    transform: translateX(1000%);
-    position: absolute;
+    transform: translateX(500%);
   }
   to {
-    position: static;
     transform: translateX(0);
   }
 }
 @keyframes centered-from-left {
   from {
-    transform: translateX(-150%);
-    position: absolute;
+    transform: translateX(-500%);
   }
   to {
     transform: translateX(0);
-    position: static;
   }
 }
 @keyframes swiped-left {
   from {
     transform: translateX(0);
-    position: static;
   }
   to {
-    position: absolute;
-    transform: translateX(-1000%);
+    transform: translateX(-500%);
   }
 }
 @keyframes swiped-right {
   from {
     transform: translateX(0);
-    position: static;
   }
   to {
-    position: absolute;
-    transform: translateX(1000%);
+    transform: translateX(500%);
   }
 }
 .hero-references {
@@ -622,12 +606,10 @@ ul {
   padding: 3rem 1rem 1rem 1rem;
 }
 .hero-references .hero-references-wrapper .hero-references-reference-left {
-  position: absolute;
-  transform: translateX(-150%);
+  display: none;
 }
 .hero-references .hero-references-wrapper .hero-references-reference-right {
-  position: absolute;
-  transform: translateX(1000%);
+  display: none;
 }
 .references-navigation {
   padding-bottom: 1rem;

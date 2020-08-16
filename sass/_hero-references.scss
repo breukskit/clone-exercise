@@ -13,7 +13,6 @@
     width: 100%;
     padding: 3rem 1rem 1rem 1rem;
     .hero-references-reference-left {
-      position: absolute;
       @extend .reference;
       &-paragraph {
         @extend .reference-paragraph;
@@ -27,7 +26,7 @@
           @extend .reference-card-text-content;
         }
       }
-      transform: translateX(-150%);
+      display: none;
     }
     .hero-references-reference-middle {
       @extend .reference;
@@ -45,7 +44,6 @@
       }
     }
     .hero-references-reference-right {
-      position: absolute;
       @extend .reference;
       &-paragraph {
         @extend .reference-paragraph;
@@ -59,7 +57,7 @@
           @extend .reference-card-text-content;
         }
       }
-      transform: translateX(1000%);
+      display: none;
     }
   }
 }

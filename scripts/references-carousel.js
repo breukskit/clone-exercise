@@ -23,17 +23,26 @@ function navigateCarousel(e) {
   target.classList.add("active-dot");
   // Assign classNames related to @keyframes that moves the elements to right-left-center
   if (target.id === "dot-1") {
+    leftReference.style.setProperty("display", "block");
+    middleReference.style.setProperty("display", "none");
+    middleReference.className = "hero-references-reference-middle swiped-right";
     leftReference.className =
       "hero-references-reference-left centered-from-left";
-    middleReference.className = "hero-references-reference-middle swiped-right";
     rightReference.className = "hero-references-reference-right";
+    rightReference.style.setProperty("display", "none");
   } else if (target.id === "dot-2") {
+    middleReference.style.setProperty("display", "block");
+    leftReference.style.setProperty("display", "none");
     leftReference.className = "hero-references-reference-left swiped-left";
     middleReference.className =
       "hero-references-reference-middle centered-from-right";
     rightReference.className = "hero-references-reference-right";
+    rightReference.style.setProperty("display", "none");
   } else if (target.id === "dot-3") {
+    rightReference.style.setProperty("display", "block");
+    middleReference.style.setProperty("display", "none");
     leftReference.className = "hero-references-reference-left";
+    leftReference.style.setProperty("display", "none");
     middleReference.className = "hero-references-reference-middle swiped-left";
     rightReference.className =
       "hero-references-reference-right centered-from-right";
