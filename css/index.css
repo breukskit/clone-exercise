@@ -70,6 +70,7 @@ ul {
   position: absolute;
   color: #262626;
   background-color: #f1eeeb;
+  z-index: 5;
 }
 .header .nav .navbar .nav-sub-menu-item {
   padding: 1rem 1.5rem;
@@ -126,6 +127,7 @@ ul {
 }
 .submenu-trigger:hover #nav-sub-menu {
   display: block;
+  z-index: 5;
 }
 
 .submenu-link {
@@ -470,6 +472,74 @@ ul {
 .hero-2 {
   background-color: white;
 }
+.reference, .hero-references .hero-references-wrapper .hero-references-reference-middle {
+  margin: auto;
+  width: 70%;
+}
+.reference .reference-paragraph, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-paragraph, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-paragraph {
+  font-style: italic;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.reference .reference-image, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-image, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-image {
+  width: 64px;
+  border-radius: 64px;
+}
+.reference .reference-card, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.reference .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference .reference-card .card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .reference-card-text-content, .reference .hero-references .hero-references-wrapper .hero-references-reference-middle-card .card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .reference .hero-references-reference-middle-card .card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .reference-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle-card .hero-references-reference-middle .reference-card .card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .reference-card-text-content, .hero-references .hero-references-wrapper .hero-references-reference-middle .hero-references-reference-middle-card .card-text-content {
+  padding: 0.5rem;
+}
+
+.references-navigation-placeholder, .references-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.references-navigation-placeholder .dot-placeholder, .references-navigation .dot-placeholder, .references-navigation .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0.5rem 0.5rem;
+}
+.references-navigation-placeholder .dot-placeholder:hover, .references-navigation .dot-placeholder:hover, .references-navigation .dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-references {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.hero-references .hero-references-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.hero-references .hero-references-wrapper .hero-references-reference-left {
+  position: absolute;
+  transform: translateX(-150%);
+}
+.hero-references .hero-references-wrapper .hero-references-reference-right {
+  position: absolute;
+  transform: translateX(1000%);
+}
+
+.active-dot {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.references-links {
+  display: none;
+}
+
 .index-main {
   width: 100%;
 }

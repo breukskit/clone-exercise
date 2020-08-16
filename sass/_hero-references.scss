@@ -1,2 +1,50 @@
+@import "reference";
+@import "navigation-dots";
+
 .hero-references {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  .hero-references-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+    .hero-references-reference-left {
+      position: absolute;
+      transform: translateX(-150%);
+    }
+    .hero-references-reference-middle {
+      @extend .reference;
+      &-paragraph {
+        @extend .reference-paragraph;
+      }
+      &-image {
+        @extend .reference-image;
+      }
+      &-card {
+        @extend .reference-card;
+        .card-text-content {
+          @extend .reference-card-text-content;
+        }
+      }
+    }
+    .hero-references-reference-right {
+      position: absolute;
+      transform: translateX(1000%);
+    }
+  }
+}
+
+.references-navigation {
+  @extend .references-navigation-placeholder;
+  .dot {
+    @extend .dot-placeholder;
+  }
+}
+
+.active-dot {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.references-links {
+  display: none;
 }

@@ -46,6 +46,7 @@
         position: absolute;
         color: map-get($colors, text);
         background-color: rgb(241, 238, 235);
+        z-index: 5;
         &-item {
           padding: 1rem 1.5rem;
         }
@@ -102,6 +103,7 @@
     color: map-get($colors, primary);
     #nav-sub-menu {
       display: block;
+      z-index: 5;
     }
   }
 }

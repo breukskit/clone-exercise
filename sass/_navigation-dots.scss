@@ -1,0 +1,17 @@
+.references-navigation-placeholder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dot-placeholder {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0.5rem 0.5rem;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
