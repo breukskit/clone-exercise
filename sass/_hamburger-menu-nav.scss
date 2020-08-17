@@ -11,6 +11,7 @@
   }
   .hamburger-menu-nav-link {
     transition: all 200ms ease-in-out;
+    font-weight: 500;
     &:hover {
       color: map-get($colors, primary);
     }

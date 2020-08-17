@@ -1,0 +1,25 @@
+.hero-3 {
+  @extend .hero;
+  background-color: #ffffff;
+  .hero-3-wrapper {
+    @extend .hero-wrapper;
+    .hero-3-left-content {
+      @extend .hero-text-content;
+    }
+    .hero-3-right-content {
+      @extend .hero-video-content;
+    }
+  }
+  .hero-3-video {
+    @extend .hero-video;
+  }
+  .hero-3-heading {
+    @extend .hero-heading;
+  }
+  .hero-3-paragraph {
+    @extend .hero-paragraph;
+  }
+  .hero-3-button {
+    @extend .hero-button;
+  }
+}

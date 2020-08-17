@@ -260,6 +260,7 @@ ul {
 }
 #hamburger-menu-nav .hamburger-menu-nav-link {
   transition: all 200ms ease-in-out;
+  font-weight: 500;
 }
 #hamburger-menu-nav .hamburger-menu-nav-link:hover {
   color: #00a79a;
@@ -281,17 +282,17 @@ ul {
   animation-fill-mode: forwards;
 }
 
-.hero, .hero-2, .hero-1 {
+.hero, .hero-3, .hero-2, .hero-1 {
   width: 100%;
   height: 80vh;
   background-color: #f7f7f7;
 }
 @media (max-width: 1024px) {
-  .hero, .hero-2, .hero-1 {
+  .hero, .hero-3, .hero-2, .hero-1 {
     height: auto;
   }
 }
-.hero .hero-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
+.hero .hero-wrapper, .hero-3 .hero-wrapper, .hero-3 .hero-3-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
   width: 100%;
   height: 80%;
   padding: 2rem;
@@ -300,11 +301,11 @@ ul {
   gap: 1.5rem;
 }
 @media (max-width: 1024px) {
-  .hero .hero-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
+  .hero .hero-wrapper, .hero-3 .hero-wrapper, .hero-3 .hero-3-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.hero .hero-text-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
+.hero .hero-text-content, .hero-3 .hero-text-content, .hero-3 .hero-3-wrapper .hero-3-left-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
   width: 80%;
   height: 80%;
   margin: auto;
@@ -313,11 +314,11 @@ ul {
   justify-content: space-around;
 }
 @media (max-width: 1024px) {
-  .hero .hero-text-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
+  .hero .hero-text-content, .hero-3 .hero-text-content, .hero-3 .hero-3-wrapper .hero-3-left-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
     order: 2;
   }
 }
-.hero .hero-video-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
+.hero .hero-video-content, .hero-3 .hero-video-content, .hero-3 .hero-3-wrapper .hero-3-right-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
   width: 80%;
   height: 80%;
   margin: auto;
@@ -326,49 +327,49 @@ ul {
   justify-content: space-around;
 }
 @media (max-width: 1024px) {
-  .hero .hero-video-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
+  .hero .hero-video-content, .hero-3 .hero-video-content, .hero-3 .hero-3-wrapper .hero-3-right-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
     order: 1;
   }
 }
-.hero .hero-video, .hero-2 .hero-video, .hero-2 .hero-2-video, .hero-1 .hero-video, .hero-1 .hero-1-video {
+.hero .hero-video, .hero-3 .hero-video, .hero-3 .hero-3-video, .hero-2 .hero-video, .hero-2 .hero-2-video, .hero-1 .hero-video, .hero-1 .hero-1-video {
   width: 100%;
 }
-.hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+.hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
   font-size: 2rem;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
-  .hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+  .hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
     text-align: center;
     padding-bottom: 1rem;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+  .hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
     text-align: center;
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
   }
 }
-.hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+.hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
   line-height: 2;
   font-size: 1.05rem;
   font-weight: 400;
 }
 @media (max-width: 1024px) {
-  .hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+  .hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
     text-align: center;
     padding-bottom: 1rem;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+  .hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
     text-align: center;
     padding-bottom: 0.5rem;
     line-height: 1.5;
   }
 }
-.hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+.hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
   display: inline-block;
   width: fit-content;
   background-color: #00a79a;
@@ -376,32 +377,32 @@ ul {
   font-weight: 500;
   color: white;
 }
-.hero .hero-button:hover, .hero-2 .hero-button:hover, .hero-2 .hero-2-button:hover, .hero-1 .hero-button:hover, .hero-1 .hero-1-button:hover {
+.hero .hero-button:hover, .hero-3 .hero-button:hover, .hero-3 .hero-3-button:hover, .hero-2 .hero-button:hover, .hero-2 .hero-2-button:hover, .hero-1 .hero-button:hover, .hero-1 .hero-1-button:hover {
   background-color: #00b6a8;
 }
 @media (max-width: 1024px) {
-  .hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+  .hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
     margin: auto;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+  .hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
     padding: 0.5rem;
     margin: auto;
   }
 }
 
-.hero, .hero-2, .hero-1 {
+.hero, .hero-3, .hero-2, .hero-1 {
   width: 100%;
   height: 80vh;
   background-color: #f7f7f7;
 }
 @media (max-width: 1024px) {
-  .hero, .hero-2, .hero-1 {
+  .hero, .hero-3, .hero-2, .hero-1 {
     height: auto;
   }
 }
-.hero .hero-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
+.hero .hero-wrapper, .hero-3 .hero-wrapper, .hero-3 .hero-3-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
   width: 100%;
   height: 80%;
   padding: 2rem;
@@ -410,11 +411,11 @@ ul {
   gap: 1.5rem;
 }
 @media (max-width: 1024px) {
-  .hero .hero-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
+  .hero .hero-wrapper, .hero-3 .hero-wrapper, .hero-3 .hero-3-wrapper, .hero-2 .hero-wrapper, .hero-2 .hero-2-wrapper, .hero-1 .hero-wrapper, .hero-1 .hero-1-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.hero .hero-text-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
+.hero .hero-text-content, .hero-3 .hero-text-content, .hero-3 .hero-3-wrapper .hero-3-left-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
   width: 80%;
   height: 80%;
   margin: auto;
@@ -423,11 +424,11 @@ ul {
   justify-content: space-around;
 }
 @media (max-width: 1024px) {
-  .hero .hero-text-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
+  .hero .hero-text-content, .hero-3 .hero-text-content, .hero-3 .hero-3-wrapper .hero-3-left-content, .hero-2 .hero-text-content, .hero-2 .hero-2-wrapper .hero-2-right-content, .hero-1 .hero-text-content, .hero-1 .hero-1-wrapper .hero-1-left-content {
     order: 2;
   }
 }
-.hero .hero-video-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
+.hero .hero-video-content, .hero-3 .hero-video-content, .hero-3 .hero-3-wrapper .hero-3-right-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
   width: 80%;
   height: 80%;
   margin: auto;
@@ -436,49 +437,49 @@ ul {
   justify-content: space-around;
 }
 @media (max-width: 1024px) {
-  .hero .hero-video-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
+  .hero .hero-video-content, .hero-3 .hero-video-content, .hero-3 .hero-3-wrapper .hero-3-right-content, .hero-2 .hero-video-content, .hero-2 .hero-2-wrapper .hero-2-left-content, .hero-1 .hero-video-content, .hero-1 .hero-1-wrapper .hero-1-right-content {
     order: 1;
   }
 }
-.hero .hero-video, .hero-2 .hero-video, .hero-2 .hero-2-video, .hero-1 .hero-video, .hero-1 .hero-1-video {
+.hero .hero-video, .hero-3 .hero-video, .hero-3 .hero-3-video, .hero-2 .hero-video, .hero-2 .hero-2-video, .hero-1 .hero-video, .hero-1 .hero-1-video {
   width: 100%;
 }
-.hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+.hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
   font-size: 2rem;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
-  .hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+  .hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
     text-align: center;
     padding-bottom: 1rem;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
+  .hero .hero-heading, .hero-3 .hero-heading, .hero-3 .hero-3-heading, .hero-2 .hero-heading, .hero-2 .hero-2-heading, .hero-1 .hero-heading, .hero-1 .hero-1-heading {
     text-align: center;
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
   }
 }
-.hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+.hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
   line-height: 2;
   font-size: 1.05rem;
   font-weight: 400;
 }
 @media (max-width: 1024px) {
-  .hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+  .hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
     text-align: center;
     padding-bottom: 1rem;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
+  .hero .hero-paragraph, .hero-3 .hero-paragraph, .hero-3 .hero-3-paragraph, .hero-2 .hero-paragraph, .hero-2 .hero-2-paragraph, .hero-1 .hero-paragraph, .hero-1 .hero-1-paragraph {
     text-align: center;
     padding-bottom: 0.5rem;
     line-height: 1.5;
   }
 }
-.hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+.hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
   display: inline-block;
   width: fit-content;
   background-color: #00a79a;
@@ -486,16 +487,16 @@ ul {
   font-weight: 500;
   color: white;
 }
-.hero .hero-button:hover, .hero-2 .hero-button:hover, .hero-2 .hero-2-button:hover, .hero-1 .hero-button:hover, .hero-1 .hero-1-button:hover {
+.hero .hero-button:hover, .hero-3 .hero-button:hover, .hero-3 .hero-3-button:hover, .hero-2 .hero-button:hover, .hero-2 .hero-2-button:hover, .hero-1 .hero-button:hover, .hero-1 .hero-1-button:hover {
   background-color: #00b6a8;
 }
 @media (max-width: 1024px) {
-  .hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+  .hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
     margin: auto;
   }
 }
 @media (max-width: 280px) {
-  .hero .hero-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
+  .hero .hero-button, .hero-3 .hero-button, .hero-3 .hero-3-button, .hero-2 .hero-button, .hero-2 .hero-2-button, .hero-1 .hero-button, .hero-1 .hero-1-button {
     padding: 0.5rem;
     margin: auto;
   }
@@ -670,6 +671,9 @@ ul {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
+.hero-3 {
+  background-color: #ffffff;
+}
 .index-main {
   width: 100%;
 }
